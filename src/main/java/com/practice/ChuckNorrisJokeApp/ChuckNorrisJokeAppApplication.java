@@ -9,9 +9,7 @@ import org.springframework.context.ApplicationContext;
 public class ChuckNorrisJokeAppApplication {
 
 	public static void main(String[] args) {
-		ApplicationContext ctx = SpringApplication.run(ChuckNorrisJokeAppApplication.class, args);
-		JokesController jokesController = (JokesController) ctx.getBean("jokesController");
-		System.out.println(jokesController.Joke());
+		SpringApplication.run(ChuckNorrisJokeAppApplication.class, args);
 
 	}
 
